@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PrintMyLocation</string>
+    <string name="my_location_str">My location is %f, %f</string>
+</resources>
