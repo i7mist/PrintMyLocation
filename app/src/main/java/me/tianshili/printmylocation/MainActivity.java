@@ -67,7 +67,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mLocationTextView = findViewById(R.id.my_location);
+        // First check whether location service is enabled on the device
         checkLocationServiceStatus(this);
+        // Next check whether location permission is granted
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -79,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Use the following line of code to print the current location on the main UI
-//        mLocationTextView.setText(getString(R.string.my_location_str, CURRENT_LATITUDE, CURRENT_LONGITUDE));
+        // TODO: get the current location and display the latitude and longitude information.
+        // Hint: mLocationTextView.setText(getString(R.string.my_location_str, CURRENT_LATITUDE, CURRENT_LONGITUDE));
     }
 }
