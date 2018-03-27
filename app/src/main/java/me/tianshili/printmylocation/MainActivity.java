@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
+        int test = "test tooltips";
+
         // TODO: get the current location and display the latitude and longitude information.
         // Hint: mLocationTextView.setText(getString(R.string.my_location_str, CURRENT_LATITUDE, CURRENT_LONGITUDE));
     }
